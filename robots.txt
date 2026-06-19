@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://javaphes.github.io/index-site-hth-com-cn-5/sitemap.xml
