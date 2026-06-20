@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速认识 500彩票网官方 · 用途说明页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f2f4f8;
+            color: #1e1e2a;
+            line-height: 1.7;
+        }
+
+        /* 深色头图 —— 故事开场 */
+        .hero {
+            background: linear-gradient(145deg, #0b1a2e 0%, #162b40 100%);
+            color: #e8edf3;
+            padding: 4.5rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 30%, rgba(90, 150, 220, 0.12) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 2.3rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            margin-top: 1.2rem;
+            opacity: 0.8;
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            font-weight: 350;
+        }
+
+        /* 浅色正文区 */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2.8rem 1.8rem 4rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 20, 40, 0.03);
+            padding: 2.6rem 2.4rem;
+            margin-bottom: 2.5rem;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+        }
+
+        .intro-text {
+            font-size: 1.08rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .intro-text strong {
+            font-weight: 600;
+            color: #0c2b44;
+        }
+
+        .highlight-link {
+            color: #0066b3;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .highlight-link:hover {
+            color: #004a85;
+            border-bottom-color: #004a85;
+        }
+
+        /* 特点列表 — 故事承接 */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem 2rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .feature-item {
+            background: #f8faff;
+            padding: 1.2rem 1.4rem;
+            border-radius: 18px;
+            border-left: 5px solid #2b6b9e;
+            transition: background 0.2s;
+        }
+
+        .feature-item:hover {
+            background: #f0f6ff;
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #0e2d45;
+        }
+
+        .feature-item p {
+            font-size: 0.96rem;
+            color: #2c3e4f;
+        }
+
+        /* 场景/FAQ摘要——叙事温和过渡 */
+        .scene-block {
+            margin-top: 1.2rem;
+        }
+
+        .scene-block h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #142b3a;
+            border-left: 4px solid #2b6b9e;
+            padding-left: 1rem;
+        }
+
+        .scene-card {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 1.4rem 1.8rem;
+            margin: 1.2rem 0;
+            border: 1px solid #e6ecf2;
+        }
+
+        .scene-card p {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .scene-card .question {
+            font-weight: 600;
+            color: #173e57;
+        }
+
+        .faq-note {
+            font-size: 0.95rem;
+            background: #eef4fa;
+            padding: 1rem 1.6rem;
+            border-radius: 40px;
+            margin: 1.8rem 0 0.8rem;
+            display: inline-block;
+        }
+
+        /* 温和结尾 */
+        .gentle-end {
+            border-top: 2px solid #dce4ed;
+            padding-top: 2rem;
+            margin-top: 1.8rem;
+            text-align: center;
+            font-size: 1rem;
+            color: #2f4057;
+        }
+
+        .gentle-end a {
+            color: #0066b3;
+        }
+
+        .gentle-end .sentence {
+            background: #f0f4fa;
+            border-radius: 60px;
+            padding: 0.8rem 2rem;
+            display: inline-block;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            .hero {
+                padding: 3rem 1.2rem 2.6rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 1.8rem 1rem 3rem;
+            }
+            .card {
+                padding: 1.6rem 1.2rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .scene-card {
+                padding: 1rem 1.2rem;
+            }
+            .gentle-end .sentence {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 · 开场短句 -->
+    <div class="hero">
+        <h1>一眼认出需要的网站</h1>
+        <div class="sub">当你在浏览器里搜索、翻看链接时，想要的不过是一个清晰、靠谱的信息源。下面这份整理，就是为了帮你快速确认：<br>这里就是 <strong>500彩票网官方</strong> 的用途说明。</div>
+    </div>
+
+    <!-- 浅色正文区 -->
+    <div class="container">
+
+        <!-- 承接段落：用途识别角度 -->
+        <div class="card">
+            <p class="intro-text">
+                很多人第一次接触彩票类网站时，最困惑的是“这个网站到底是做什么的？是官方信息源吗？” 其实，判断依据很简单：看它是否集中提供开奖结果、玩法规则、以及相关资讯。而<a href="https://cnsite--500.com" class="highlight-link">500彩票网官方</a>正是围绕这些核心需求搭建的平台——用户不用在多个页面之间反复跳转，就能找到自己关心的内容。
+            </p>
+            <p class="intro-text" style="margin-top:1.2rem;">
+                从用户视角来说，一个靠谱的站点通常具备三个特征：信息更新及时、分类清晰、以及有明确的来源说明。如果你正在找一个能快速查看彩种数据、了解基本玩法的网站，那么下面这些特点或许能帮你做决定。
+            </p>
+        </div>
+
+        <!-- 特点列表 -->
+        <div class="card" style="padding-bottom: 2rem;">
+            <h2 style="font-size:1.4rem; font-weight:500; margin-bottom:0.2rem; color:#142b3a;">常见用途 · 一目了然</h2>
+            <p style="color:#3c5068; margin-bottom:0.5rem; font-size:0.95rem;">以下根据多数用户反馈整理，不包含任何诱导性描述。</p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>📊 开奖结果查询</h3>
+                    <p>覆盖多种彩种的开奖号码与期次，列表式展示，便于快速核对。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📋 玩法与规则说明</h3>
+                    <p>每种彩种都配有基本的玩法介绍和奖金结构，适合新用户了解。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📅 历史走势与数据</h3>
+                    <p>提供基础的走势图表和号码频率统计，辅助用户自行分析。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔔 资讯与公告</h3>
+                    <p>包括彩种调整、派奖活动等官方通知，信息源统一。</p>
+                </div>
+            </div>
+            <p style="margin-top:1.2rem; font-size:0.95rem; color:#40576b;">
+                以上每一项都以信息展示为主，不涉及购彩、充值或任何交易引导。
+            </p>
+        </div>
+
+        <!-- 场景 / FAQ 摘要 -->
+        <div class="scene-block">
+            <h2>常见场景 · 快速对应</h2>
+            <div class="scene-card">
+                <p><span class="question">🔹 场景一：</span> 我想查一下昨晚某彩种的开奖号码，但不想下载 App。</p>
+                <p>→ 直接在 500彩票网官方 页面找到对应彩种，开奖结果通常在首页或彩种专区列出，无需注册即可浏览。</p>
+            </div>
+            <div class="scene-card">
+                <p><span class="question">🔹 场景二：</span> 刚接触彩票，想知道“任选三”“组选”这些词是什么意思。</p>
+                <p>→ 每个彩种下都有独立的玩法说明模块，用短句解释基本术语，适合入门阅读。</p>
+            </div>
+            <div class="scene-card">
+                <p><span class="question">🔹 场景三：</span> 看到别人讨论走势图，但自己不知道怎么用。</p>
+                <p>→ 网站提供简单的冷热号统计和基本走势，可以配合规则说明一起看，帮助建立自己的判断思路。</p>
+            </div>
+
+            <div class="faq-note">
+                💬 小提示：如果你不确定某个页面是不是官方渠道，可以核对网址是否为 <strong>cnsite--500.com</strong>，并留意页面底部是否有备案或联系方式说明。
+            </div>
+        </div>
+
+        <!-- 温和结尾 -->
+        <div class="gentle-end">
+            <div class="sentence">
+                一份简单的介绍，希望能帮你少花时间判断网站用途，更多时间用在阅读信息本身。<br>
+                如果你正在找的正是 <a href="https://cnsite--500.com" class="highlight-link">500彩票网官方</a>，那这份整理应该刚好对上。
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
